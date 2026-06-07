@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Cosmetics - Stage 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--
+        STAGE 5 - CSS Grid Layout
+        In this stage, the product catalogue is placed into a multi-column CSS Grid layout.
+        Product information keeps the same catalogue logic as Stage 6.
+    -->
+    <header class="site-header">
+        <a href="../index.html" class="back-link">Project Landing</a>
+        <h1>Glow Cosmetics</h1>
+        <p>K-beauty catalogue with 104 real products and matching product images.</p>
+    </header>
+
+    <main class="catalog-layout">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>Tools</li>
+                <li>Toners & Essences</li>
+                <li>Moisturizers</li>
+                <li>Sun Care</li>
+                <li>Sets</li>
+                <li>Cleansers</li>
+                <li>Masks</li>
+                <li>Body & Hair</li>
+                <li>K-Beauty</li>
+                <li>Serums</li>
+            </ul>
+        </aside>
+
+        <section class="catalog-section" id="products">
+            <div class="section-title">
+                <h2>Product Catalogue</h2>
+                <p>104 products shown with CSS Grid.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card" data-category="Tools">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Cellect-Rejuvenating-Red.jpg?v=1756220213" alt="CELLECT - Beauty Beam Rejuvenating Red">
+                    <p class="category-name">Tools</p>
+                    <h3>CELLECT - Beauty Beam Rejuvenating Red</h3>
+                    <p>A practical beauty tool for at-home routines. It helps customers make their skincare steps easier and more consistent.</p>
+                    <strong>6440 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Make-Prem-Relief-Essence-Toner.jpg?v=1752910739" alt="MAKE P:REM - Safe me. Relief Essence Toner">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>MAKE P:REM - Safe me. Relief Essence Toner</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>1050 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Revamped-Dr-Althea-Revamped-345-Relief-Cream-01.png?v=1715304073" alt="DR ALTHEA - 345 Relief Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>DR ALTHEA - 345 Relief Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>945 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sun Care">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/SokoGlamPDP_SummerSet_1.png?v=1777931542" alt="Soko Glam - Summer Glow Set">
+                    <p class="category-name">Sun Care</p>
+                    <h3>Soko Glam - Summer Glow Set</h3>
+                    <p>A daily sun care option for morning routines. It supports protection while keeping the skincare routine simple.</p>
+                    <strong>2100 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/GlowontheGoKit.png?v=1777074849" alt="Soko Glam - Glow On The Go Kit">
+                    <p class="category-name">Sets</p>
+                    <h3>Soko Glam - Glow On The Go Kit</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>1575 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/SokoGlamPDP_SkinFloodingSetUpdate_1.png?v=1775591049" alt="Soko Glam - Exclusive Skin Flooding Kit">
+                    <p class="category-name">Cleansers</p>
+                    <h3>Soko Glam - Exclusive Skin Flooding Kit</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>3500 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Wander-Baggage-Claim-Deluxe-Eye-Masks-01.png?v=1731000245" alt="WANDER BEAUTY - Baggage Claim Deluxe Eye Mask Set - Limited Edition">
+                    <p class="category-name">Masks</p>
+                    <h3>WANDER BEAUTY - Baggage Claim Deluxe Eye Mask Set - Limited Edition</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>1330 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Anillo-Amber528-Parfum-Body-Mist.jpg?v=1756221082" alt="Anillo - Amber528 Parfum Body Mist">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>Anillo - Amber528 Parfum Body Mist</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>1096 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Anillo_Rosy_Night_Set.jpg?v=1756221926" alt="Anillo - Rosy Night Set">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>Anillo - Rosy Night Set</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>1813 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/DewyTree-Hi-Amino-Cleansing-Milk.jpg?v=1756218763" alt="DEWYTREE - Hi Amino All Cleansing Milk">
+                    <p class="category-name">Cleansers</p>
+                    <h3>DEWYTREE - Hi Amino All Cleansing Milk</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>554 TL</strong>
+                </article>
+                <article class="product-card" data-category="K-Beauty">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Unleashia-Glitterpedia-No-1-All-Of-Glitter.jpg?v=1756218934" alt="UNLEASHIA - Glitterpedia Eye Palette - No1. All of Glitter">
+                    <p class="category-name">K-Beauty</p>
+                    <h3>UNLEASHIA - Glitterpedia Eye Palette - No1. All of Glitter</h3>
+                    <p>A Korean beauty product selected for modern routines. It adds variety and trend-focused care to the catalogue.</p>
+                    <strong>612 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Torriden-Balanceful-Cleansing-Gel.jpg?v=1756218937" alt="Torriden - Balanceful Cica Cleansing Gel">
+                    <p class="category-name">Cleansers</p>
+                    <h3>Torriden - Balanceful Cica Cleansing Gel</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>770 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/The-Lab-By-Blanc-Doux-Oligo-Hyaluronic-Acid-Deep-Toner.jpg?v=1756221101" alt="The Lab By Blanc Doux - Oligo Hyaluronic Acid Deep Toner">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>The Lab By Blanc Doux - Oligo Hyaluronic Acid Deep Toner</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>770 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/The-Lab-By-Blanc-Doux-Green-Flavonoid-Solution.jpg?v=1756219992" alt="The Lab By Blanc Doux - Green Flavonoid 2.5 Solution">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>The Lab By Blanc Doux - Green Flavonoid 2.5 Solution</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>735 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/The-Lab-By-Blanc-Doux-Green-Flavonoid-2.5-Pad_1.jpg?v=1756941814" alt="The Lab By Blanc Doux - Green Flavonoid 2.5 Pads">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>The Lab By Blanc Doux - Green Flavonoid 2.5 Pads</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>770 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/The-Lab-By-Blanc-Doux-Oligo-Hyaluronic-Acid-Hydro-Serum.jpg?v=1752910750" alt="The Lab By Blanc Doux - Oligo Hyaluronic Acid Hydro Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>The Lab By Blanc Doux - Oligo Hyaluronic Acid Hydro Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>945 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/SOMEBYMI_GALACTOMYCES-PURE-VITAMIN-C-GLOW-TONER.jpg?v=1756219054" alt="SOME BY MI - Galactomyces Pure Vitamin C Glow Toner">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>SOME BY MI - Galactomyces Pure Vitamin C Glow Toner</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>785 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/10.1-Soko-Glam-PDP-Sioris-My-First-Essener-Korean-Skincare.jpg?v=1633358390" alt="SIORIS - My First Essener">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>SIORIS - My First Essener</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Plodica-Always-Youth-Cream.jpg?v=1756941803" alt="Plodica - Always Youth Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>Plodica - Always Youth Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1155 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Plodica-Youth-Up-Ampoule-01.png?v=1690228671" alt="Plodica - Youth Up Ampoule">
+                    <p class="category-name">Serums</p>
+                    <h3>Plodica - Youth Up Ampoule</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="K-Beauty">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Neogen-Extra-Clear-Eye-Remover-01.png?v=1706720198" alt="NEOGEN - Dermalogy Extra Clear Eye Remover">
+                    <p class="category-name">K-Beauty</p>
+                    <h3>NEOGEN - Dermalogy Extra Clear Eye Remover</h3>
+                    <p>A Korean beauty product selected for modern routines. It adds variety and trend-focused care to the catalogue.</p>
+                    <strong>665 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Mixsoon-Centella-Mask-Pack.jpg?v=1756220671" alt="MIXSOON - Centella Mask Pack (5 Pack)">
+                    <p class="category-name">Masks</p>
+                    <h3>MIXSOON - Centella Mask Pack (5 Pack)</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>700 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Mixsoon-Soondy-Centella-Asiatica-Essence.jpg?v=1756219465" alt="MIXSOON - Soondy Centella Asiatica Essence">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>MIXSOON - Soondy Centella Asiatica Essence</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>784 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Mixsoon-Master-Gentle-Recipe-Foam-Cleanser_1.jpg?v=1756911440" alt="MIXSOON - Master Gentle Recipe Foam Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>MIXSOON - Master Gentle Recipe Foam Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>805 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Mediheal-The-N.M.F-Ampoule-Mask_1.jpg?v=1684272937" alt="MEDIHEAL - THE N.M.F Ampoule Mask 10 Pack">
+                    <p class="category-name">Serums</p>
+                    <h3>MEDIHEAL - THE N.M.F Ampoule Mask 10 Pack</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1050 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/3.3-Soko-Glam-PDP-Mediheal-Theraffin-Hand-Mask.jpg?v=1636559404" alt="MEDIHEAL - Theraffin Hand Mask">
+                    <p class="category-name">Masks</p>
+                    <h3>MEDIHEAL - Theraffin Hand Mask</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>61 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/3.4-Soko-Glam-PDP-Mediheal-N.M.F-Intensive-Hydrating-Cream-Package.jpg?v=1636559396" alt="MEDIHEAL - N.M.F Intensive Hydrating Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>MEDIHEAL - N.M.F Intensive Hydrating Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>525 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/MakePrem_SafeMe.ReliefMoistureCream12_PackageUpdate.jpg?v=1756221601" alt="MAKE P:REM - Safe Me. Relief Moisture Cream 12">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>MAKE P:REM - Safe Me. Relief Moisture Cream 12</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1260 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Make-Prem-Amino-Refresh-Cleansing-Balm.jpg?v=1756219253" alt="MAKE P:REM - Safe me. Amino Refresh Cleansing Balm">
+                    <p class="category-name">Cleansers</p>
+                    <h3>MAKE P:REM - Safe me. Amino Refresh Cleansing Balm</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>945 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Lapcos-Chaga-Rest-Essence-Toner.jpg?v=1756218655" alt="LAPCOS - Chaga Rest Essence Toner">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>LAPCOS - Chaga Rest Essence Toner</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/LadorTeaTreeScalpClinicHairPack.jpg?v=1756221170" alt="LA'DOR - Tea Tree Scalp Clinic Hair Pack">
+                    <p class="category-name">Serums</p>
+                    <h3>LA'DOR - Tea Tree Scalp Clinic Hair Pack</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>665 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Klairs-Fundamental-Water-Gel-Cream.jpg?v=1756221907" alt="KLAIRS - Fundamental Water Gel Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>KLAIRS - Fundamental Water Gel Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1085 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/HA_toner_plus_200ml.jpg?v=1756219434" alt="ISNTREE - Hyaluronic Acid Toner Plus">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>ISNTREE - Hyaluronic Acid Toner Plus</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>844 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Inward-YULMU-Brightening-Spot-Cream.jpg?v=1756218860" alt="INWARD - YULMU  Brightening Spot Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>INWARD - YULMU  Brightening Spot Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1085 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-I_m-from-Body-Wash-Nyeok-01.png?v=1698612304" alt="I'M FROM - Body Wash - Nyeok">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>I'M FROM - Body Wash - Nyeok</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>1190 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/I_m-From-Mushroom-Collagen-Cream.jpg?v=1756220552" alt="I'M FROM - Mushroom Collagen Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>I'M FROM - Mushroom Collagen Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1225 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko_Glam_Revamped_PDP_Hero_Cosmetic_Mighty_Patch_Micropoint_for_Blemishes.png?v=1686200404" alt="Hero Cosmetics - Mighty Patch - Micropoint">
+                    <p class="category-name">Serums</p>
+                    <h3>Hero Cosmetics - Mighty Patch - Micropoint</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>455 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/GlowiestLipOilEffortlessGlowLipOilgroup.jpg?v=1758827665" alt="GLOWIEST - Effortless Glow Lip Oil">
+                    <p class="category-name">Serums</p>
+                    <h3>GLOWIEST - Effortless Glow Lip Oil</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>840 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Etude-Glow-Fixing-Tint-01.png?v=1708632505" alt="ETUDE - Glow Fixing Tint">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>ETUDE - Glow Fixing Tint</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>370 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/Erborian_BB_Creme_Au_Ginseng_Caramel_PDP_1.jpg?v=1678733608" alt="ERBORIAN - BB Creme Au Ginseng">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>ERBORIAN - BB Creme Au Ginseng</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1610 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Orga-Houttuynia-Cordata-Body-Wash.jpg?v=1756219836" alt="Dr. Orga - pH-balanced Houttuynia Cordata Body Wash">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>Dr. Orga - pH-balanced Houttuynia Cordata Body Wash</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>671 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Orga-Alpine-Rose-Conditioner.jpg?v=1753653170" alt="Dr. Orga - Alpine Rose Conditioner">
+                    <p class="category-name">Serums</p>
+                    <h3>Dr. Orga - Alpine Rose Conditioner</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>729 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Orga-Alpine-Rose-Shampoo.jpg?v=1756220469" alt="Dr. Orga - Alpine Rose Shampoo">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>Dr. Orga - Alpine Rose Shampoo</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>671 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Orga-Rosemary-mint-Shampoo.jpg?v=1756220267" alt="Dr. Orga - Rosemary & Mint Shampoo">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>Dr. Orga - Rosemary & Mint Shampoo</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>671 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Orga-Pure-Tamanu-Light-Oil.jpg?v=1756220747" alt="Dr. Orga - Pure Tamanu Light Oil">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>Dr. Orga - Pure Tamanu Light Oil</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>963 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Oracle-Cornflower-Blue-Ampoule.jpg?v=1756220020" alt="DR ORACLE - Cornflower Blue Ampoule">
+                    <p class="category-name">Serums</p>
+                    <h3>DR ORACLE - Cornflower Blue Ampoule</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>700 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr.Althea-Oasis-Soothing-Mask.jpg?v=1756220320" alt="DR ALTHEA - Oasis Soothing Mask">
+                    <p class="category-name">Masks</p>
+                    <h3>DR ALTHEA - Oasis Soothing Mask</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>441 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr.-Althea-Herb-Therapy-Velvet-Mask-10-pack.jpg?v=1756219456" alt="DR ALTHEA - Dr. Althea Herb Therapy Velvet Mask (10 pack)">
+                    <p class="category-name">Masks</p>
+                    <h3>DR ALTHEA - Dr. Althea Herb Therapy Velvet Mask (10 pack)</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>928 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/Soko-Glam-Dr.-Althea-Essential-Skin-Conditioner-Silk-Mask-_5-pack_-PDP.jpg?v=1636559419" alt="DR ALTHEA - Essential Skin Conditioner Silk Mask (5 pack)">
+                    <p class="category-name">Masks</p>
+                    <h3>DR ALTHEA - Essential Skin Conditioner Silk Mask (5 pack)</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>529 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr.-Althea-Rapid-Firm-Sculpting-Cream.jpg?v=1756221575" alt="DR ALTHEA - Rapid Firm Sculpting Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>DR ALTHEA - Rapid Firm Sculpting Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1260 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr-Althea-Amino-Acid-Gentle-Bubble-Cleanser.jpg?v=1756220943" alt="DR ALTHEA - Amino Acid Gentle Bubble Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>DR ALTHEA - Amino Acid Gentle Bubble Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>630 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dewytree-Ultra-Vitalizing-Snail-Cream-Skin-Care-Korean.jpg?v=1756218940" alt="DEWYTREE - Ultra Vitalizing Snail Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>DEWYTREE - Ultra Vitalizing Snail Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1505 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dewytree-Cica-100-Essence.jpg?v=1756220939" alt="DEWYTREE - Cica 100 Essence">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>DEWYTREE - Cica 100 Essence</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>1085 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/8.5-Soko-Glam-PDP-_Renewal_-Dewytree-Ultra-Vitalizing-Snail-Serum-Korean-Skincare.jpg?v=1637097115" alt="DEWYTREE - Ultra Vitalizing Snail Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>DEWYTREE - Ultra Vitalizing Snail Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1505 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dewytree-Hi-Amino-All-Cleanser.jpg?v=1756220165" alt="DEWYTREE - Hi Amino All Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>DEWYTREE - Hi Amino All Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>560 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/products/Soko-Glam-PDP-Image-Goodbye-Redness-Centella-Mask-Pack-Single.jpg?v=1677478547" alt="BENTON - Goodbye Redness Centella Mask Pack">
+                    <p class="category-name">Masks</p>
+                    <h3>BENTON - Goodbye Redness Centella Mask Pack</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>980 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Revamped-DermaB-Body-Care-Set-01.png?v=1715185845" alt="SOKO GLAM - Family Body Care Set">
+                    <p class="category-name">Sets</p>
+                    <h3>SOKO GLAM - Family Body Care Set</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>861 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Aestura-A-Cica-365-Blemish-Relief-Serum-01.png?v=1715981504" alt="Aestura - A-Cica Blemish Relief Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>Aestura - A-Cica Blemish Relief Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1365 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Acwell-Revamped-pH-Balancing-Watery-Cleansing-Oil.jpg?v=1756221494" alt="ACWELL - pH Balancing Watery Cleansing Oil">
+                    <p class="category-name">Cleansers</p>
+                    <h3>ACWELL - pH Balancing Watery Cleansing Oil</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>875 TL</strong>
+                </article>
+                <article class="product-card" data-category="K-Beauty">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Neogen-Dermalogy-Extra-Volume-Curl-Metal-Maxicara-01_2.png?v=1697493798" alt="NEOGEN - Dermalogy Extra Volumecurl Metal Maxicara - Black">
+                    <p class="category-name">K-Beauty</p>
+                    <h3>NEOGEN - Dermalogy Extra Volumecurl Metal Maxicara - Black</h3>
+                    <p>A Korean beauty product selected for modern routines. It adds variety and trend-focused care to the catalogue.</p>
+                    <strong>1330 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Son_ParkBeautyWater.jpg?v=1757373158" alt="SON & PARK - Beauty Water">
+                    <p class="category-name">Cleansers</p>
+                    <h3>SON & PARK - Beauty Water</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>1050 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Knours-Your-Only-Meditation-Gel-Cream-01_1.png?v=1756220985" alt="Knours - Your Only Meditation Gel Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>Knours - Your Only Meditation Gel Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>840 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Huxely-BODY-LOTION-MOROCCAN-GARDENER.jpg?v=1753399900" alt="HUXLEY - Body Lotion - Moroccan Gardener">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>HUXLEY - Body Lotion - Moroccan Gardener</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>1260 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Tony-Moly-Timeless-Ferment-Snail-Lip-Treatment-Stick.jpg?v=1756219225" alt="TONY MOLY - Timeless Ferment Snail Lip Treatment Stick">
+                    <p class="category-name">Serums</p>
+                    <h3>TONY MOLY - Timeless Ferment Snail Lip Treatment Stick</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>385 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Isentree_Mugwort_calming_clay_mask_100ml.jpg?v=1756221412" alt="ISNTREE - Mugwort Calming Clay Mask">
+                    <p class="category-name">Masks</p>
+                    <h3>ISNTREE - Mugwort Calming Clay Mask</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>840 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Isntree-Green-Tea-Fresh-Serum.jpg?v=1756221217" alt="ISNTREE - Green Tea Fresh Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>ISNTREE - Green Tea Fresh Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1096 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Isentree_CHESTNUT_AHA_8__CLEAR_ESSENCE.jpg?v=1756220993" alt="ISNTREE - Chestnut 8% AHA Clear Essence">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>ISNTREE - Chestnut 8% AHA Clear Essence</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>634 TL</strong>
+                </article>
+                <article class="product-card" data-category="K-Beauty">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Elorea-Heaven-04_1_29fefcef-57bf-4e0f-ad02-ac2244e03c58.png?v=1729809618" alt="ELOREA - HEAVEN (건) Eau De Parfum (10ml)">
+                    <p class="category-name">K-Beauty</p>
+                    <h3>ELOREA - HEAVEN (건) Eau De Parfum (10ml)</h3>
+                    <p>A Korean beauty product selected for modern routines. It adds variety and trend-focused care to the catalogue.</p>
+                    <strong>1750 TL</strong>
+                </article>
+                <article class="product-card" data-category="K-Beauty">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/SokoGlamBrandedBaseballCap-A.jpg?v=1756218670" alt="SOKO GLAM - Soko Glam Logo Baseball Cap">
+                    <p class="category-name">K-Beauty</p>
+                    <h3>SOKO GLAM - Soko Glam Logo Baseball Cap</h3>
+                    <p>A Korean beauty product selected for modern routines. It adds variety and trend-focused care to the catalogue.</p>
+                    <strong>700 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Iope-XMD-Serum-01.png?v=1768420123" alt="IOPE - XMD Stem III Clinical Recovery Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>IOPE - XMD Stem III Clinical Recovery Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>2870 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Sioris-Cleanse-Me-Softly-Milk-Cleanser.jpg?v=1756219683" alt="SIORIS - Cleanse Me Softly Milk Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>SIORIS - Cleanse Me Softly Milk Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>980 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sun Care">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/New-Curation-Neogen-DAY-LIGHT-PROTECTION-AIRYSUNSCREEN_1.jpg?v=1754962658" alt="NEOGEN - Day-Light Protection Airy Sunscreen">
+                    <p class="category-name">Sun Care</p>
+                    <h3>NEOGEN - Day-Light Protection Airy Sunscreen</h3>
+                    <p>A daily sun care option for morning routines. It supports protection while keeping the skincare routine simple.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Dr.Althea_147BarrierCream.jpg?v=1756218704" alt="DR ALTHEA - 147 Barrier Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>DR ALTHEA - 147 Barrier Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>945 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/1_Resized_345de61a-1687-459a-ba72-c51c700f4244.jpg?v=1768947329" alt="VT COSMETICS - VT Reedle Shot 300">
+                    <p class="category-name">Serums</p>
+                    <h3>VT COSMETICS - VT Reedle Shot 300</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1050 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/GB_OatinCalminggelCream_nobg_Resized_25812624-dc2a-4ed9-943b-87673c969e4b.jpg?v=1768606700" alt="Purito Seoul - Oat-in Calming Gel Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>Purito Seoul - Oat-in Calming Gel Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>683 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/OatCleanser_nobg_Resized_63e51175-dead-4a24-a26d-eab52f43b287.jpg?v=1768414379" alt="Purito Seoul - Oat-in Gentle Exfoliating Face Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>Purito Seoul - Oat-in Gentle Exfoliating Face Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>770 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/850009701312-hero_f7b2d586-d3ad-4683-b4f9-93d6d34ec4b3.jpg?v=1767989544" alt="Then I Met You - Snail Mucin Eye Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>Then I Met You - Snail Mucin Eye Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>1610 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sun Care">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Cell-Fusion-C-AiryStickSunscreen-01.png?v=1767754983" alt="Cell Fusion C - Airy Stick Sunscreen">
+                    <p class="category-name">Sun Care</p>
+                    <h3>Cell Fusion C - Airy Stick Sunscreen</h3>
+                    <p>A daily sun care option for morning routines. It supports protection while keeping the skincare routine simple.</p>
+                    <strong>805 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Melixir-Mandarin-Vitamin-CE-Hydration-Cream.png?v=1760384529" alt="MELIXIR - Melixir Mandarin Vitamin CE Hydration Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>MELIXIR - Melixir Mandarin Vitamin CE Hydration Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>945 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Melixir-Mandarin-Morning-Face-Cleanser.png?v=1760384521" alt="MELIXIR - Melixir Mandarin Morning Face Cleanser">
+                    <p class="category-name">Cleansers</p>
+                    <h3>MELIXIR - Melixir Mandarin Morning Face Cleanser</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>875 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/10-StepKoreanSkinCareRoutineSet_DrySkinType.png?v=1773098613" alt="SOKO GLAM - 10-Step Korean Skin Care Routine Set (Dry Skin Type)">
+                    <p class="category-name">Sets</p>
+                    <h3>SOKO GLAM - 10-Step Korean Skin Care Routine Set (Dry Skin Type)</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>6965 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Soko-Glam-10-Step-Korean-Skin-Care-Routine-Set-Normal-Skin-Type_1_21eedc34-e6ca-425f-8a76-6b3c4f1839d2_1.png?v=1767818106" alt="SOKO GLAM - 10-Step Korean Skin Care Routine Set (Normal Skin Type)">
+                    <p class="category-name">Sets</p>
+                    <h3>SOKO GLAM - 10-Step Korean Skin Care Routine Set (Normal Skin Type)</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>7210 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/dewglowtinteddeep1_Resized.jpg?v=1763179496" alt="NATURIUM - Dew-Glow Tinted Moisturizer SPF 50+">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>NATURIUM - Dew-Glow Tinted Moisturizer SPF 50+</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>805 TL</strong>
+                </article>
+                <article class="product-card" data-category="Cleansers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/NATR-40005_The-Perfector_Generic_front_Resized.jpg?v=1761427456" alt="NATURIUM - The Perfector Salicylic Acid Body Wash">
+                    <p class="category-name">Cleansers</p>
+                    <h3>NATURIUM - The Perfector Salicylic Acid Body Wash</h3>
+                    <p>A cleanser for the first step of the routine. It helps remove daily buildup and prepares the skin for care products.</p>
+                    <strong>595 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/NATR-10102-Multi-Peptide-Advanced-Serum-01_Resized.jpg?v=1761628455" alt="NATURIUM - Multi-Peptide Advanced Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>NATURIUM - Multi-Peptide Advanced Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>875 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-6.png?v=1763678811" alt="NATURIUM - Phyto-Glow Lip Balm SPF 45">
+                    <p class="category-name">Serums</p>
+                    <h3>NATURIUM - Phyto-Glow Lip Balm SPF 45</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>438 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-4.png?v=1763678829" alt="NATURIUM - The Glow Getter Multi-Oil Body Butter">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>NATURIUM - The Glow Getter Multi-Oil Body Butter</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>700 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-3.png?v=1763678796" alt="NATURIUM - The Glow Getter Body Oil">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>NATURIUM - The Glow Getter Body Oil</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>840 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-1.png?v=1763678800" alt="NATURIUM - Urea 5% Body Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>NATURIUM - Urea 5% Body Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>770 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized.png?v=1763678786" alt="NATURIUM - The Energizer Mandelic Acid Body Wash">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>NATURIUM - The Energizer Mandelic Acid Body Wash</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>595 TL</strong>
+                </article>
+                <article class="product-card" data-category="Body & Hair">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-2.png?v=1763678832" alt="NATURIUM - The Calmer Ceramide Body Wash">
+                    <p class="category-name">Body & Hair</p>
+                    <h3>NATURIUM - The Calmer Ceramide Body Wash</h3>
+                    <p>A body and hair care item for everyday self-care. It supports softness, freshness, and a more complete beauty routine.</p>
+                    <strong>595 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-7.png?v=1764710805" alt="NATURIUM - Multi-Peptide Rich Cream">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>NATURIUM - Multi-Peptide Rich Cream</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>875 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-Naturium-Resized-5.png?v=1763678783" alt="NATURIUM - Barrier Bounce Serum">
+                    <p class="category-name">Serums</p>
+                    <h3>NATURIUM - Barrier Bounce Serum</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>840 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-5.png?v=1763678839" alt="VT COSMETICS - VT Reedle Shot Starter Kit (8ct)">
+                    <p class="category-name">Sets</p>
+                    <h3>VT COSMETICS - VT Reedle Shot Starter Kit (8ct)</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>350 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-1_e0ebdf12-d724-48d2-a59d-79963184a9da.png?v=1763678803" alt="VT COSMETICS - VT Color Reedle Shot Starter Stick Kit (8ct)">
+                    <p class="category-name">Sets</p>
+                    <h3>VT COSMETICS - VT Color Reedle Shot Starter Stick Kit (8ct)</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>350 TL</strong>
+                </article>
+                <article class="product-card" data-category="Moisturizers">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-2.png?v=1763678792" alt="VT COSMETICS - VT PDRN Cream 100">
+                    <p class="category-name">Moisturizers</p>
+                    <h3>VT COSMETICS - VT PDRN Cream 100</h3>
+                    <p>A moisturizing product that helps the skin feel soft, balanced, and comfortable after the previous skincare steps.</p>
+                    <strong>910 TL</strong>
+                </article>
+                <article class="product-card" data-category="Toners & Essences">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-3.png?v=1763678789" alt="VT COSMETICS - VT PDRN Essence 100">
+                    <p class="category-name">Toners & Essences</p>
+                    <h3>VT COSMETICS - VT PDRN Essence 100</h3>
+                    <p>A lightweight toner or essence step for daily hydration. It prepares the skin before serum and moisturizer.</p>
+                    <strong>980 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-4.png?v=1763678779" alt="VT COSMETICS - VT Reedle Shot 100">
+                    <p class="category-name">Serums</p>
+                    <h3>VT COSMETICS - VT Reedle Shot 100</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>910 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-7_2c8c181b-d69a-4a3a-8bc0-d7e5743fda43.png?v=1763678825" alt="VT COSMETICS - VT Reedle Shot 50">
+                    <p class="category-name">Serums</p>
+                    <h3>VT COSMETICS - VT Reedle Shot 50</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>700 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized.png?v=1763678822" alt="VT COSMETICS - VT Collagen Reedle Shot 100">
+                    <p class="category-name">Serums</p>
+                    <h3>VT COSMETICS - VT Collagen Reedle Shot 100</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="Serums">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/Soko-Glam-PDP-VTReedleResized-6.png?v=1763678807" alt="VT COSMETICS - VT Reti-A Reedle Shot 100">
+                    <p class="category-name">Serums</p>
+                    <h3>VT COSMETICS - VT Reti-A Reedle Shot 100</h3>
+                    <p>A concentrated serum step for targeted care. It fits between toner and moisturizer in the routine.</p>
+                    <strong>1120 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sun Care">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/sku_f0264_shades_light-medium_01_Resized.jpg?v=1762834103" alt="Live Tinted - Hueguard® Glotion Mineral Sunscreen Broad Spectrum SPF 50">
+                    <p class="category-name">Sun Care</p>
+                    <h3>Live Tinted - Hueguard® Glotion Mineral Sunscreen Broad Spectrum SPF 50</h3>
+                    <p>A daily sun care option for morning routines. It supports protection while keeping the skincare routine simple.</p>
+                    <strong>1260 TL</strong>
+                </article>
+                <article class="product-card" data-category="Masks">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/PDRN___250702_3D.png__Resized.jpg?v=1762156019" alt="Biodance - Rejuvenating Caviar PDRN Real Deep Mask">
+                    <p class="category-name">Masks</p>
+                    <h3>Biodance - Rejuvenating Caviar PDRN Real Deep Mask</h3>
+                    <p>A focused mask step for special care days. It adds a spa-like moment to the skincare routine.</p>
+                    <strong>665 TL</strong>
+                </article>
+                <article class="product-card" data-category="Sets">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/1218/files/5-STEPANTI-AGINGSET_1.png?v=1776399263" alt="SOKO GLAM - 5-Step Anti-Aging Set">
+                    <p class="category-name">Sets</p>
+                    <h3>SOKO GLAM - 5-Step Anti-Aging Set</h3>
+                    <p>A curated set that brings several beauty steps together. It is useful for gifting or trying a complete routine.</p>
+                    <strong>3325 TL</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

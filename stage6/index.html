@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Cosmetics - Stage 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--
+        STAGE 6 - JavaScript & DOM
+        On this final page, 100+ products are rendered with JavaScript.
+        When a product card is clicked, the detail modal opens and cart updates happen through the DOM.
+    -->
+    <header class="top-bar">
+        <a href="../index.html" class="logo">Glow Cosmetics</a>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <p class="eyebrow">Beauty & Makeup Store</p>
+            <h1>Curated beauty products for every routine.</h1>
+            <p>
+                A professional catalogue inspired by modern beauty stores:
+                categories, product details, images, and a working shopping cart.
+            </p>
+            <a href="#shop" class="hero-link">Shop the catalogue</a>
+        </div>
+        <img src="../assets/glow-products.png" alt="Glow Cosmetics product display">
+    </section>
+
+    <main class="shop-layout" id="shop">
+        <aside class="filter-panel">
+            <h2>Categories</h2>
+            <div id="category-buttons" class="category-buttons"></div>
+        </aside>
+
+        <section class="product-panel">
+            <div class="catalog-tools">
+                <div>
+                    <p class="eyebrow">Product Catalogue</p>
+                    <h2 id="catalog-title">All Products</h2>
+                    <p id="product-count"></p>
+                </div>
+
+                <label for="search-input">
+                    Search
+                    <input id="search-input" type="text" placeholder="Lipstick, serum, perfume...">
+                </label>
+            </div>
+
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <aside class="cart-panel" id="cart">
+            <h2>Your Cart</h2>
+            <p id="selected-product">No product selected yet.</p>
+            <ul id="cart-list"></ul>
+            <p class="cart-total"><strong>Total:</strong> <span id="total-price">0</span> TL</p>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </aside>
+    </main>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <p class="eyebrow">Customer Care</p>
+            <h2>Need help choosing a product?</h2>
+            <p>
+                Send us a message about your skin type or the product category you are interested in.
+                Our team will recommend a simple Glow Cosmetics routine.
+            </p>
+            <div class="contact-buttons">
+                <a href="#shop">Browse Products</a>
+                <a href="#cart">View Cart</a>
+            </div>
+        </div>
+
+        <!--
+            Simple form tags are written with the input and textarea logic from the HTML Forms lecture.
+        -->
+        <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="yourmail@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what kind of product you are looking for."></textarea>
+
+            <button id="send-message" type="button">Send Message</button>
+            <p id="form-feedback" class="form-feedback">Form is ready.</p>
+        </form>
+    </section>
+
+    <!--
+        The product detail modal is hidden at the beginning.
+        JavaScript writes the selected product information into this area.
+    -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-button" type="button">Close</button>
+            <img id="modal-image" src="../assets/products/gc-001.svg" alt="">
+            <div>
+                <p id="modal-category" class="eyebrow"></p>
+                <h2 id="modal-name"></h2>
+                <p id="modal-description"></p>
+                <div id="modal-highlights" class="modal-highlights"></div>
+                <p id="modal-details"></p>
+                <p class="modal-price"><span id="modal-price"></span> TL</p>
+                <button id="modal-add-cart" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./products.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

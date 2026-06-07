@@ -1,0 +1,39 @@
+/*
+    STAGE 3 - Colors and Typography
+    In this stage, only color, font, and icon appearance change.
+    According to the PDF rule, box spacing properties are not used.
+*/
+/* The general page color and font family are set. */
+body {
+    background-color: #f6f4f1;
+    color: #1f1f1f;
+    font-family: "Poppins", Arial, sans-serif;
+}
+/* Headings use the decorative font loaded from Google Fonts. */
+h1,
+h2 {
+    color: #111111;
+    font-family: "Playfair Display", Georgia, serif;
+}
+/* Links and icons use a color close to the brand accent. */
+a {
+    color: #7a3d50;
+}
+
+th {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+i {
+    color: #7a3d50;
+}
+/* A width limit is added so images do not overflow. */
+img {
+    max-width: 100%;
+    background-color: #ffffff;
+}
